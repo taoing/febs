@@ -19,7 +19,7 @@ public class ArticleController {
 
     @Log("获取每日一文信息")
     @RequestMapping("article")
-    @PreAuthorize("hasAuthority('article:lsit')")
+    @PreAuthorize("hasAuthority('article:list')")
     public String index() {
         return "others/article/article";
     }
