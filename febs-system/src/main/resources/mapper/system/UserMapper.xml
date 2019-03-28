@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.taoing.system.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.taoing.system.domain.MyUser">
+    <id column="USER_ID" jdbcType="DECIMAL" property="userId" />
+    <result column="USERNAME" jdbcType="VARCHAR" property="username" />
+    <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
+    <result column="DEPT_ID" jdbcType="DECIMAL" property="deptId" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="MOBILE" jdbcType="VARCHAR" property="mobile" />
+    <result column="STATUS" jdbcType="CHAR" property="status" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="LAST_LOGIN_TIME" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="SSEX" jdbcType="CHAR" property="ssex" />
+    <result column="THEME" jdbcType="VARCHAR" property="theme" />
+    <result column="AVATAR" jdbcType="VARCHAR" property="avatar" />
+    <result column="DESCRIPTION" jdbcType="VARCHAR" property="description" />
+  </resultMap>
+
+  <select id="findUserWithDept" resultType="myUser" parameterType="myUser">
+    select u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime,
+    u.ssex, u.theme, u.avatar, d.dept_name deptName from t_user u
+    left join t_dept d on(u.dept_id = d.dept_id) where 1=1
+    <if test = "username != null and username != ''">
+      and u.username = #{username}
+    </if>
+    <if test="deptId != null and deptId != ''">
+      and d.dept_id = #{deptId}
+    </if>
+    <if test="ssex != null and ssex != ''">
+      and u.ssex = #{ssex}
+    </if>
+    <if test="status != null and status != ''">
+      and u.status = #{status}
+    </if>
+    order by u.user_id
+  </select>
+
+  <select id="findUserWithRole" resultType="userWithRole">
+    select u.user_id userId, u.username, u.dept_id deptId, u.email, u.mobile,
+    u.status, u.ssex, ur.role_id roleId from t_user u
+    left join t_user_role ur on(u.user_id = ur.user_id)
+    where u.user_id = #{userId}
+  </select>
+
+  <select id="findUserProfile" resultType="myUser" parameterType="myUser">
+    select
+      u.username,
+      u.user_id userId,
+      d.dept_name deptName,
+      u.mobile,
+      u.email,
+      u.avatar,
+      u.description,
+      u.ssex,
+      u.dept_id deptId,
+      group_concat(r.role_name) as roleName
+    from t_user u
+    left join t_dept d on u.dept_id = d.dept_id
+    left join t_user_role ur on u.user_id = ur.user_id
+    left join t_role r on r.role_id = ur.role_id
+    where
+      u.user_id = #{userId}
+    group by
+      u.username,
+      d.dept_name,
+      u.mobile,
+      u.email,
+      u.avatar,
+      u.description,
+      u.ssex,
+      u.user_id,
+      u.dept_id
+  </select>
+</mapper>

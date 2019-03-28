@@ -1,0 +1,53 @@
+10:17:34.843 sms   [main] INFO  com.taoing.FebsApplicationTest - Starting FebsApplicationTest on taomian-PC with PID 1840 (started by taomian in D:\java\source_code\febs\febs-web)
+10:17:34.847 sms   [main] INFO  com.taoing.FebsApplicationTest - No active profile set, falling back to default profiles: default
+10:17:35.004 sms   [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6304101a: startup date [Thu Mar 28 10:17:35 CST 2019]; root of context hierarchy
+10:17:39.769 sms   [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:17:40.997 sms   [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+10:17:41.178 sms   [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+10:17:41.181 sms   [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10:17:41.181 sms   [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10:17:41.181 sms   [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+10:17:41.181 sms   [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+10:17:41.181 sms   [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10:17:41.274 sms   [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:17:41.407 sms   [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [com.taoing.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$50ec9460] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:17:41.457 sms   [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+10:17:41.840 sms   [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0abb9d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:17:42.106 sms   [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+10:17:42.111 sms   [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+10:17:42.119 sms   [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.taoing.common.config.RedisConfig$$EnhancerBySpringCGLIB$$efab18b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:17:42.229 sms   [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$49598212] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:17:42.246 sms   [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:17:42.251 sms   [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@17ba57f0' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:17:42.264 sms   [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$6e2e24c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:17:42.292 sms   [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:17:44.450 sms   [main] INFO  com.zaxxer.hikari.HikariDataSource - FebsHikariCP - Starting...
+10:17:44.985 sms   [main] INFO  com.zaxxer.hikari.HikariDataSource - FebsHikariCP - Start completed.
+10:17:45.174 sms   [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:17:45.276 sms   [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:17:45.276 sms   [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+10:17:45.284 sms   [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+10:17:45.288 sms   [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+10:17:45.290 sms   [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'MyScheduler' with instanceId 'taomian-PC1553739465178'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+10:17:45.290 sms   [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+10:17:45.290 sms   [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+10:17:45.295 sms   [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4f93bf0a
+10:17:45.457 sms   [main] INFO  c.t.c.i.SqlStatementInterceptor - [sql语句Id]>>>> com.taoing.quartz.dao.JobMapper.queryList
+10:17:45.457 sms   [main] INFO  c.t.c.i.SqlStatementInterceptor - [sql语句执行耗时]>>>> 65
+10:17:45.457 sms   [main] INFO  c.t.c.i.SqlStatementInterceptor - [sql语句]>>>> select job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime from t_job order by job_id
+10:17:48.321 sms   [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+10:17:48.321 sms   [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_taomian-PC1553739465178 shutting down.
+10:17:48.321 sms   [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_taomian-PC1553739465178 paused.
+10:17:48.321 sms   [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_taomian-PC1553739465178 shutdown complete.
+10:17:48.330 sms   [main] INFO  com.zaxxer.hikari.HikariDataSource - FebsHikariCP - Shutdown initiated...
+10:17:48.341 sms   [main] INFO  com.zaxxer.hikari.HikariDataSource - FebsHikariCP - Shutdown completed.
+10:17:48.353 sms   [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
