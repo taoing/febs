@@ -74,7 +74,7 @@ public class SqlStatementInterceptor implements Interceptor {
                           String sqlId, long time) {
         String sql = showSql(configuration, boundSql);
         logger.info("[sql语句Id]>>>> {}", sqlId);
-        logger.info("[sql语句执行耗时]>>>> {}", time);
+        logger.info("[sql语句执行耗时]>>>> {} ms", time);
         logger.info("[sql语句]>>>> {}", sql);
     }
 
